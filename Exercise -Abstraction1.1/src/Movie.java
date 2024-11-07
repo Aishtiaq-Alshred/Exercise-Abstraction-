@@ -19,9 +19,9 @@ public class Movie extends Product{
         this.directot = directot;
     }
 
-    @Override
+  @Override
     public double getDiscount(double discountPercentage) {
-        return super.getDiscount(discountPercentage);
+        return getPrice() - (getPrice() * (discountPercentage / 100));
     }
 
 }
