@@ -21,7 +21,7 @@ public class Book extends Product{
 
     @Override
     public double getDiscount(double discountPercentage) {
-        return super.getDiscount(discountPercentage);
+        return getPrice() - (getPrice() * (discountPercentage / 100));
     }
 }
 
