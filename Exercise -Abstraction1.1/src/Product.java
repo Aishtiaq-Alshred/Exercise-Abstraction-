@@ -28,9 +28,7 @@ class Product {
         this.price = price;
     }
 
-    public double getDiscount(double discountPercentage) {
-        return price - (price * (discountPercentage / 100));
-    }
+      public abstract double getDiscount(double discountPercentage);
 
 
 }
